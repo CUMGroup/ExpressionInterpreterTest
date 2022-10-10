@@ -20,5 +20,14 @@ namespace ExpressionInterpreterTest.Nodes {
         public override string ToString() {
             return varname;
         }
+
+        // override object.Equals
+        public override bool Equals(object obj) {
+            return obj is NodeVar && ((NodeVar)obj).varname == this.varname;
+        }
+
+        public override int GetHashCode() {
+            return base.GetHashCode();
+        }
     }
 }

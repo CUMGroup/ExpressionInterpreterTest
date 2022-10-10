@@ -27,5 +27,15 @@ namespace ExpressionInterpreterTest.Nodes {
         public override string ToString() {
             return FuncProvider.ToString(args);
         }
+
+        // override object.Equals
+        public override bool Equals(object obj) {
+            return obj is NodeFunction funct && funct.FuncProvider.ToString().Equals(FuncProvider.ToString()) && funct.args.Equals(args);
+        }
+
+        // override object.GetHashCode
+        public override int GetHashCode() { 
+            return base.GetHashCode();
+        }
     }
 }
