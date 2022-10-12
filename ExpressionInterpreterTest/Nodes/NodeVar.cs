@@ -13,8 +13,8 @@ namespace ExpressionInterpreterTest.Nodes {
             this.varname = varname;
         }
 
-        public override Node Eval(IContext ctx) {
-            return this;
+        public override double Eval(IContext ctx) {
+            return ctx.GetVariable(varname);
         }
 
         public override string ToString() {

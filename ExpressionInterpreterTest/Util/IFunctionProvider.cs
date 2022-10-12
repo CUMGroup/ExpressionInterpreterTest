@@ -9,7 +9,7 @@ namespace ExpressionInterpreterTest.Util {
     internal interface IFunctionProvider {
 
         Node DifferentiateFunction(Node arg);
-        Node Eval(NodeNum arg);
+        double Eval(double arg);
         String ToString(Node arg);
     }
 }

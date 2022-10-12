@@ -9,23 +9,24 @@ using System.Threading.Tasks;
 namespace ExpressionInterpreterTest.Nodes {
     internal class NodeFunction : Node {
 
-        public IFunctionProvider FuncProvider { get; private set; }
-        private Node args;
+        private Node[] args;
+        private readonly String functionname;
 
-        public NodeFunction(Node args, IFunctionProvider func) {
+        public NodeFunction(Node[] args, String functionname) {
             this.args = args;
-            this.FuncProvider = func;
+            this.functionname = functionname;
         }
 
-        public override Node Eval(IContext ctx) {
-            args = args.Eval(ctx);
-            if (args is NodeNum)
-                return FuncProvider.Eval((NodeNum)args);
-            return this;
+        public override double Eval(IContext ctx) {
+            double[] argVals = new double[args.Length];
+            for (int i = 0; i < args.Length; ++i) {
+                argVals[i] = args[i].Eval(ctx);
+            }
+            return ctx.CallFunction(functionname, argVals);
         }
 
         public override string ToString() {
-            return FuncProvider.ToString(args);
+            return "";//FuncProvider.ToString(args);
         }
     }
 }

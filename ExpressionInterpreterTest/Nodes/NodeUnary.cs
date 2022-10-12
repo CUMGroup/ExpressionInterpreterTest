@@ -19,11 +19,8 @@ namespace ExpressionInterpreterTest.Nodes {
             this.OperationType = OperationType;
         }
 
-        public override Node Eval(IContext ctx) {
-            rhs = rhs.Eval(ctx);
-            if (rhs is NodeNum)
-                return new NodeNum(op(((NodeNum)rhs).GetValue()));
-            return this;
+        public override double Eval(IContext ctx) {
+            return op(rhs.Eval(ctx));
         }
 
         public override string ToString() {

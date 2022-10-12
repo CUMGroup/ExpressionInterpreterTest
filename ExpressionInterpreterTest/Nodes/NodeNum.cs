@@ -18,8 +18,8 @@ namespace ExpressionInterpreterTest.Nodes {
             return num;
         }
 
-        public override Node Eval(IContext ctx) {
-            return this;
+        public override double Eval(IContext ctx) {
+            return num;
         }
 
         public override string ToString() {

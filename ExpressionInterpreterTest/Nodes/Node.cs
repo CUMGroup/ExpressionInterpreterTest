@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ExpressionInterpreterTest.Nodes {
     internal abstract class Node {
-        public abstract Node Eval(IContext ctx);
+        public abstract double Eval(IContext ctx);
 
         public abstract override String ToString();
     }

@@ -16,10 +16,8 @@ namespace ExpressionInterpreterTest.Nodes {
             this.rhs = rhs;
         }
 
-        public override Node Eval(IContext ctx) {
-            lhs = lhs.Eval(ctx);
-            rhs = rhs.Eval(ctx);
-            return this;
+        public override double Eval(IContext ctx) {
+            throw new NotImplementedException();
         }
 
         public override string ToString() {
