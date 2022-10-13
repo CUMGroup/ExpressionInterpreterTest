@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32602.215
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExpressionInterpreterTest", "ExpressionInterpreterTest\ExpressionInterpreterTest.csproj", "{D43FB108-3E87-42F9-BCF7-364B83854B16}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExpressionInterpreterTest", "ExpressionInterpreterTest\ExpressionInterpreterTest.csproj", "{D43FB108-3E87-42F9-BCF7-364B83854B16}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MathLibaryTest", "MathLibaryTest\MathLibaryTest.csproj", "{644739A1-38BD-4D91-9381-0D6E5A017FCB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{D43FB108-3E87-42F9-BCF7-364B83854B16}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D43FB108-3E87-42F9-BCF7-364B83854B16}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D43FB108-3E87-42F9-BCF7-364B83854B16}.Release|Any CPU.Build.0 = Release|Any CPU
+		{644739A1-38BD-4D91-9381-0D6E5A017FCB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{644739A1-38BD-4D91-9381-0D6E5A017FCB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{644739A1-38BD-4D91-9381-0D6E5A017FCB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{644739A1-38BD-4D91-9381-0D6E5A017FCB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
