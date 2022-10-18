@@ -10,11 +10,11 @@ using System.Threading.Tasks;
 namespace ExpressionInterpreterTest {
     public class Benchmark {
 
-        [Params(10, 100, 1000)]
+        [Params(1, 10, 100, 1000)]
         public double MaxIter { get; set; }
 
         [Benchmark]
-        public void CheckEquality() {
+        public void CalcEquation() {
             IContext ctx = new ContextLibrary();
             for (int i = 0; i < MaxIter; ++i) {
                 double x = Random.Shared.NextDouble() * 1000 - 500;
