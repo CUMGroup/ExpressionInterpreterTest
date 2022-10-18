@@ -9,7 +9,7 @@ The first test was just crudely implementing an Expression Tree and checking the
 As you can see we have a quite good time for a single calculation. But to ensure the equivalence we have to use more values. It seems to be running in O(logn) with n being the number of equality tests.
 
 ## Test 2 (Branch Test 2)
-In the second test we tried to implement some simplification Algorithm, to simplify a given Expression Tree in order to check the equality more easily. But we quickly abandoned this approach as we found a good library to do this for me (see test 3).
+In the second test we tried to implement some simplification Algorithm, to simplify a given Expression Tree in order to check the equality more easily. But we quickly abandoned this approach as we found a good library to do this for us (see test 3).
 
 ## Test 3 (Branch Test 4)
 In the third test we experimented with the library [AngouriMath](https://github.com/asc-community/AngouriMath). It has methods to parse, evaluate and simplify Mathematical Expression in a wide range. It also can handle Differentiation, Integration, Limits, Complex Numbers and much more.
